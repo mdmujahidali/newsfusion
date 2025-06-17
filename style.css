@@ -1,0 +1,131 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 0.5em 1em;
+  background-color: #dd2476;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+main {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}
+
+.news-article {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.news-article:hover {
+  transform: translateY(-5px);
+}
+
+.news-article img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.quiz-container {
+  padding: 2em;
+  margin-top: 2em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-question {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.quiz-options {
+  margin-bottom: 1em;
+}
+
+.quiz-options button {
+  display: block;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.quiz-options button:hover {
+  background-color: #e4e4e4;
+}

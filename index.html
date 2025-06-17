@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Fusion Website</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/logo.png" alt="NewsFusion" width="120">
+    </div>
+    <nav>
+      <ul>
+        <li onclick="fetchNews('technology')">Technology</li>
+        <li onclick="fetchNews('business')">Business</li>
+        <li onclick="fetchNews('entertainment')">Entertainment</li>
+        <li onclick="fetchNews('sports')">Sports</li>
+        <li onclick="fetchNews('science')">Science</li>
+        <li onclick="fetchNews('health')">Health</li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button onclick="searchNews()">Search</button>
+    </div>
+    <div class="toggle-container">
+      <input type="checkbox" id="dark-mode-toggle">
+      <label for="dark-mode-toggle">Dark Mode</label>
+    </div>
+  </header>
+  
+  <main id="news-container"></main>
+
+  <div id="quiz-container" class="quiz-container">
+    <h2>Quiz</h2>
+    <div id="quiz-question" class="quiz-question"></div>
+    <div id="quiz-options" class="quiz-options"></div>
+    <button onclick="nextQuestion()">Next Question</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 News Fusion. All rights reserved.</p>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
